@@ -22,11 +22,11 @@ function fillTimeTable() {
         timeTableElement = hourBeginning.add(1,'h').format('HH:mm A');
 
         if (currentHour == realHour) {
-            currentState = 'present';
+            currentState = '.present';
         } else if (currentHour < realHour) {
-            currentState = 'past';
+            currentState = '.past';
         } else {
-            currentState = 'future';
+            currentState = '.future';
         }
 
         var appendBlock = 
